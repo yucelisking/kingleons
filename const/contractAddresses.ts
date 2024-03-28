@@ -3,7 +3,12 @@
 // 1. Set up the network your smart contracts are deployed to.
 // First, import the chain from the package, then set the NETWORK variable to the chain.
 import { Mumbai } from "@thirdweb-dev/chains";
+import { ThirdwebSDK } from "@thirdweb-dev/sdk";
 export const NETWORK = Mumbai;
+
+const sdk = new ThirdwebSDK(NETWORK, {
+  apiKey: "e8a3624a0736b9065e49784315f573b0"
+});
 
 // 2. The address of the marketplace V3 smart contract.
 // Deploy your own: https://thirdweb.com/thirdweb.eth/MarketplaceV3
