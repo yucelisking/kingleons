@@ -6,7 +6,7 @@ import { Mumbai } from "@thirdweb-dev/chains";
 import { ThirdwebSDK } from "@thirdweb-dev/sdk";
 export const NETWORK = Mumbai;
 
-const sdk = new ThirdwebSDK(NETWORK, {
+const sdk = new ThirdwebSDK(Mumbai, {
   apiKey: "e8a3624a0736b9065e49784315f573b0"
 });
 
